@@ -16,12 +16,21 @@ body {
   color: var(--header-mail-tel-body-color);
 }
 
+section {
+  padding: 94px 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .link {
@@ -52,6 +61,12 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -61,6 +76,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--active-link-color);
+  margin-right: 93px;
 }
 .header-logo-bottom {
   font-family: "Raleway";
@@ -69,6 +85,24 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-logo-color);
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list-adress {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -119,6 +153,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-mail-tel-body-color);
+  margin-left: 50px;
 }
 
 .header-tel:hover,
@@ -162,13 +197,22 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-link-color);
   cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------characteristics---------- */
 
-.characteristics {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.characteristics-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.characteristics-item {
+  flex-basis: calc((100% -120px) / 4);
+  margin-left: 30px;
 }
 
 .characteristics-title-bottom {
@@ -199,12 +243,21 @@ body {
   margin-bottom: 50px;
 }
 
-/* ----------command----------- */
-
-.command {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.employment-list {
+  display: flex;
+  margin-left: -30px;
 }
+
+.employment-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+}
+
+.employment-img {
+  height: auto;
+}
+
+/* ----------command----------- */
 
 .command-title-mine {
   font-weight: 700;
@@ -215,8 +268,19 @@ body {
   margin-bottom: 50px;
 }
 
+.command-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.command-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+}
+
 .command-img {
   margin-bottom: 30px;
+  height: auto;
 }
 
 .command-title-bottom {
@@ -323,13 +387,13 @@ body {
 
 /* -----------------------------------портфолио--------------------------- */
 
-.employmen {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.employmen-list {
+  display: flex;
+  justify-content: center;
 }
 
-.employmen-img {
-  margin-bottom: 20px;
+.employmen-item :not(last-child) {
+  margin-right: 8px;
 }
 
 .employmen-btn {
@@ -342,6 +406,10 @@ body {
   color: var(--bottom-title-color);
   background-color: var(--title-link-color);
   cursor: pointer;
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .employmen-btn:hover,
@@ -356,6 +424,26 @@ body {
   background-color: var(--active-link-color);
 }
 
+.employmen-content {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+}
+
+.employmen-list-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.employmen-item-bottom {
+  width: calc((100% / 3 - 30px));
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .employmen-title-bottom {
   font-weight: 700;
   font-size: 18px;
@@ -363,10 +451,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--bottom-title-color);
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 
 .employmen-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--header-mail-tel-body-color);
+  margin-left: 24px;
 }
