@@ -16,9 +16,15 @@ body {
   color: var(--header-mail-tel-body-color);
 }
 
-section {
-  padding: 94px 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
 }
+
 img {
   display: block;
   width: 100%;
@@ -39,6 +45,8 @@ img {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -77,6 +85,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--active-link-color);
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-logo-bottom {
   font-family: "Raleway";
@@ -112,6 +122,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--bottom-title-color);
+  padding: 20px 0;
 }
 .link-active {
   color: var(--active-link-color);
@@ -171,10 +182,12 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--footer-background-color);
 }
 
 .hero-title {
-  background-color: var(--header-mail-tel-body-color);
+  width: 696px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -201,9 +214,14 @@ img {
   border-radius: 4px;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 
 /* ----------characteristics---------- */
+
+.characteristics {
+  padding: 94px 0;
+}
 
 .characteristics-list {
   display: flex;
@@ -231,6 +249,7 @@ img {
 /* ----------employment---------- */
 
 .employment {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 
@@ -253,11 +272,12 @@ img {
   margin-left: 30px;
 }
 
-.employment-img {
-  height: auto;
-}
-
 /* ----------command----------- */
+
+.command {
+  background: #f5f4fa;
+  padding: 94px 0;
+}
 
 .command-title-mine {
   font-weight: 700;
@@ -276,6 +296,9 @@ img {
 .command-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .command-img {
@@ -387,9 +410,14 @@ img {
 
 /* -----------------------------------портфолио--------------------------- */
 
+.employmen {
+  padding: 94px 0;
+}
+
 .employmen-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .employmen-item :not(last-child) {
@@ -407,9 +435,9 @@ img {
   background-color: var(--title-link-color);
   cursor: pointer;
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: #f5f4fa;
   border-radius: 4px;
+  border: none;
 }
 
 .employmen-btn:hover,
@@ -428,7 +456,7 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding-top: 20px;
+  padding: 20px 24px;
 }
 
 .employmen-list-bottom {
@@ -451,12 +479,10 @@ img {
   letter-spacing: 0.06em;
   color: var(--bottom-title-color);
   margin-bottom: 4px;
-  margin-left: 24px;
 }
 
 .employmen-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--header-mail-tel-body-color);
-  margin-left: 24px;
 }
