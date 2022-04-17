@@ -21,8 +21,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin-top: 0;
+h6,
+p {
+  margin: 0;
 }
 
 img {
@@ -67,8 +68,6 @@ img {
 /* !------------header-----------! */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -145,6 +144,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-mail-tel-body-color);
+  padding: 20px 0;
 }
 
 .header-mail:hover,
@@ -165,6 +165,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--header-mail-tel-body-color);
   margin-left: 50px;
+  padding: 20px 0;
 }
 
 .header-tel:hover,
@@ -311,14 +312,14 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
   color: var(--bottom-title-color);
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .command-text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -336,6 +337,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: block;
   color: var(--active-link-color);
   margin-bottom: 20px;
 }
@@ -355,6 +357,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: block;
   color: var(--title-link-color);
   margin-bottom: 9px;
 }
@@ -375,6 +378,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: block;
   color: var(--footer-mail-tel-color);
   margin-bottom: 9px;
 }
@@ -394,6 +398,7 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
   letter-spacing: 0.03em;
   color: var(--footer-mail-tel-color);
 }
@@ -420,7 +425,7 @@ img {
   margin-bottom: 50px;
 }
 
-.employmen-item :not(last-child) {
+.employmen-item:not(:last-child) {
   margin-right: 8px;
 }
 
